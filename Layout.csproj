@@ -1,0 +1,600 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{8B04BBF1-99E2-4B10-8952-5E7A7BFD3C6F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Layout</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".vs\DD\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\DD\FileContentIndex\39a188f9-89a4-4abf-ac89-5f618d694c36.vsidx" />
+    <None Include=".vs\DD\FileContentIndex\8d18b954-ce2b-41f6-a700-5d2de33e20bd.vsidx" />
+    <None Include=".vs\DD\FileContentIndex\read.lock" />
+    <None Include=".vs\DD\v17\.futdcache.v2" />
+    <None Include=".vs\DD\v17\.suo" />
+    <None Include=".vs\Layout-CHY_MVVM\FileContentIndex\6a63ccb6-6da4-4c52-9be1-ea5ec93001f9.vsidx" />
+    <None Include=".vs\Layout-CHY_MVVM\FileContentIndex\read.lock" />
+    <None Include=".vs\Layout-CHY_MVVM\v17\.wsuo" />
+    <None Include=".vs\ProjectEvaluation\dd.metadata.v7.bin" />
+    <None Include=".vs\ProjectEvaluation\dd.projects.v7.bin" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="app.config" />
+    <None Include="DataCenter\DataCenter.csproj" />
+    <None Include="DataCenter\obj\DataCenter.csproj.nuget.dgspec.json" />
+    <None Include="DataCenter\obj\DataCenter.csproj.nuget.g.props" />
+    <None Include="DataCenter\obj\DataCenter.csproj.nuget.g.targets" />
+    <None Include="DataCenter\obj\Debug\net48\DataCenter.AssemblyInfoInputs.cache" />
+    <None Include="DataCenter\obj\Debug\net48\DataCenter.assets.cache" />
+    <None Include="DataCenter\obj\Debug\net48\DataCenter.csproj.AssemblyReference.cache" />
+    <None Include="DataCenter\obj\Debug\net48\DataCenter.csproj.CoreCompileInputs.cache" />
+    <None Include="DataCenter\obj\Debug\net48\DataCenter.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DataCenter\obj\project.assets.json" />
+    <None Include="DataCenter\obj\project.nuget.cache" />
+    <None Include="DataCenter\obj\Release\net48\DataCenter.AssemblyInfoInputs.cache" />
+    <None Include="DataCenter\obj\Release\net48\DataCenter.csproj.AssemblyReference.cache" />
+    <None Include="DataCenter\obj\Release\net48\DataCenter.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\.vs\DD\FileContentIndex\4e6ac3a5-0ead-472e-b723-25765af22be1.vsidx" />
+    <None Include="DD\.vs\DD\FileContentIndex\dcc4e6b3-d1c2-4683-8be5-0df8ec23bcb5.vsidx" />
+    <None Include="DD\.vs\DD\FileContentIndex\e25d0e6c-c811-417e-86f7-e85aa952fc66.vsidx" />
+    <None Include="DD\.vs\DD\FileContentIndex\fe302d42-452d-4fc7-8f8d-863dc1c35962.vsidx" />
+    <None Include="DD\.vs\DD\FileContentIndex\read.lock" />
+    <None Include="DD\.vs\DD\v17\.wsuo" />
+    <None Include="DD\.vs\ProjectSettings.json" />
+    <None Include="DD\.vs\slnx.sqlite" />
+    <None Include="DD\.vs\VSWorkspaceState.json" />
+    <None Include="DD\bin\Debug\net48\DD.exe.config" />
+    <None Include="DD\DD.csproj" />
+    <None Include="DD\obj\DD.csproj.nuget.dgspec.json" />
+    <None Include="DD\obj\DD.csproj.nuget.g.props" />
+    <None Include="DD\obj\DD.csproj.nuget.g.targets" />
+    <None Include="DD\obj\DD_fhgtdwdk_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="DD\obj\DD_fhgtdwdk_wpftmp.csproj.nuget.g.props" />
+    <None Include="DD\obj\DD_fhgtdwdk_wpftmp.csproj.nuget.g.targets" />
+    <None Include="DD\obj\DD_m0wx40t4_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="DD\obj\DD_m0wx40t4_wpftmp.csproj.nuget.g.props" />
+    <None Include="DD\obj\DD_m0wx40t4_wpftmp.csproj.nuget.g.targets" />
+    <None Include="DD\obj\DD_ppvqnpzc_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="DD\obj\DD_ppvqnpzc_wpftmp.csproj.nuget.g.props" />
+    <None Include="DD\obj\DD_ppvqnpzc_wpftmp.csproj.nuget.g.targets" />
+    <None Include="DD\obj\DD_uyx41j3w_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="DD\obj\DD_uyx41j3w_wpftmp.csproj.nuget.g.props" />
+    <None Include="DD\obj\DD_uyx41j3w_wpftmp.csproj.nuget.g.targets" />
+    <None Include="DD\obj\Debug\net48\DD.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD.csproj.AssemblyReference.cache" />
+    <None Include="DD\obj\Debug\net48\DD.csproj.CopyComplete" />
+    <None Include="DD\obj\Debug\net48\DD.csproj.CoreCompileInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="DD\obj\Debug\net48\DD.exe.config" />
+    <None Include="DD\obj\Debug\net48\DD.exe.withSupportedRuntime.config" />
+    <None Include="DD\obj\Debug\net48\DD.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_fhgtdwdk_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_fhgtdwdk_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_fhgtdwdk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_fuizvnim_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_fuizvnim_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_fuizvnim_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_g4k4xllq_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_g4k4xllq_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_g4k4xllq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_m0wx40t4_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_m0wx40t4_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_m0wx40t4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_m1jtvepd_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_m1jtvepd_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_m1jtvepd_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_MarkupCompile.cache" />
+    <None Include="DD\obj\Debug\net48\DD_MarkupCompile.i.cache" />
+    <None Include="DD\obj\Debug\net48\DD_MarkupCompile.i.lref" />
+    <None Include="DD\obj\Debug\net48\DD_MarkupCompile.lref" />
+    <None Include="DD\obj\Debug\net48\DD_ppvqnpzc_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_ppvqnpzc_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_ppvqnpzc_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_ssdvn2bk_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_ssdvn2bk_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_ssdvn2bk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_uyx41j3w_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_uyx41j3w_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_uyx41j3w_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Debug\net48\DD_yv1utmsb_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Debug\net48\DD_yv1utmsb_wpftmp.assets.cache" />
+    <None Include="DD\obj\Debug\net48\DD_yv1utmsb_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\project.assets.json" />
+    <None Include="DD\obj\project.nuget.cache" />
+    <None Include="DD\obj\Release\net48\DD.AssemblyInfoInputs.cache" />
+    <None Include="DD\obj\Release\net48\DD.assets.cache" />
+    <None Include="DD\obj\Release\net48\DD.csproj.AssemblyReference.cache" />
+    <None Include="DD\obj\Release\net48\DD.exe.withSupportedRuntime.config" />
+    <None Include="DD\obj\Release\net48\DD.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DD\obj\Release\net48\DD_MarkupCompile.cache" />
+    <None Include="DD\obj\Release\net48\DD_MarkupCompile.lref" />
+    <None Include="obj\x86\Release\Layout.csproj.AssemblyReference.cache" />
+    <None Include="Plan\bin\Debug\net48\DD.exe.config" />
+    <None Include="Plan\bin\Debug\net48\Plan.gha" />
+    <None Include="Plan\obj\Debug\net48\Plan.AssemblyInfoInputs.cache" />
+    <None Include="Plan\obj\Debug\net48\Plan.assets.cache" />
+    <None Include="Plan\obj\Debug\net48\Plan.csproj.AssemblyReference.cache" />
+    <None Include="Plan\obj\Debug\net48\Plan.csproj.CopyComplete" />
+    <None Include="Plan\obj\Debug\net48\Plan.csproj.CoreCompileInputs.cache" />
+    <None Include="Plan\obj\Debug\net48\Plan.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Plan\obj\Debug\net48\Plan.gha" />
+    <None Include="Plan\obj\Plan.csproj.nuget.dgspec.json" />
+    <None Include="Plan\obj\Plan.csproj.nuget.g.props" />
+    <None Include="Plan\obj\Plan.csproj.nuget.g.targets" />
+    <None Include="Plan\obj\project.assets.json" />
+    <None Include="Plan\obj\project.nuget.cache" />
+    <None Include="Plan\obj\Release\net48\Plan.AssemblyInfoInputs.cache" />
+    <None Include="Plan\obj\Release\net48\Plan.csproj.AssemblyReference.cache" />
+    <None Include="Plan\obj\Release\net48\Plan.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Plan\Plan.csproj" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataCenter\bin\Debug\net48\DataCenter.dll" />
+    <Content Include="DataCenter\bin\Debug\net48\DataCenter.pdb" />
+    <Content Include="DataCenter\obj\Debug\net48\DataCenter.csproj.FileListAbsolute.txt" />
+    <Content Include="DataCenter\obj\Debug\net48\DataCenter.dll" />
+    <Content Include="DataCenter\obj\Debug\net48\DataCenter.pdb" />
+    <Content Include="DD.sln" />
+    <Content Include="DD\bin\Debug\net48\BouncyCastle.Crypto.dll" />
+    <Content Include="DD\bin\Debug\net48\DD.exe" />
+    <Content Include="DD\bin\Debug\net48\DD.pdb" />
+    <Content Include="DD\bin\Debug\net48\Eto.dll" />
+    <Content Include="DD\bin\Debug\net48\e_sqlite3.dll" />
+    <Content Include="DD\bin\Debug\net48\GH_IO.dll" />
+    <Content Include="DD\bin\Debug\net48\Google.Protobuf.dll" />
+    <Content Include="DD\bin\Debug\net48\GraphQL.Client.Abstractions.dll" />
+    <Content Include="DD\bin\Debug\net48\GraphQL.Client.Abstractions.Websocket.dll" />
+    <Content Include="DD\bin\Debug\net48\GraphQL.Client.dll" />
+    <Content Include="DD\bin\Debug\net48\GraphQL.Primitives.dll" />
+    <Content Include="DD\bin\Debug\net48\Grasshopper.dll" />
+    <Content Include="DD\bin\Debug\net48\K4os.Compression.LZ4.dll" />
+    <Content Include="DD\bin\Debug\net48\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="DD\bin\Debug\net48\K4os.Hash.xxHash.dll" />
+    <Content Include="DD\bin\Debug\net48\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="DD\bin\Debug\net48\Microsoft.Data.Sqlite.dll" />
+    <Content Include="DD\bin\Debug\net48\MySql.Data.dll" />
+    <Content Include="DD\bin\Debug\net48\Newtonsoft.Json.dll" />
+    <Content Include="DD\bin\Debug\net48\Objects.dll" />
+    <Content Include="DD\bin\Debug\net48\Polly.Contrib.WaitAndRetry.dll" />
+    <Content Include="DD\bin\Debug\net48\Polly.dll" />
+    <Content Include="DD\bin\Debug\net48\Polly.Extensions.Http.dll" />
+    <Content Include="DD\bin\Debug\net48\Rhino.UI.dll" />
+    <Content Include="DD\bin\Debug\net48\RhinoCommon.dll" />
+    <Content Include="DD\bin\Debug\net48\Sentry.dll" />
+    <Content Include="DD\bin\Debug\net48\Sentry.Serilog.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Enrichers.ClientInfo.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Enrichers.GlobalLogContext.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Exceptions.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Formatting.Compact.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Sinks.Console.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Sinks.File.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Sinks.PeriodicBatching.dll" />
+    <Content Include="DD\bin\Debug\net48\Serilog.Sinks.Seq.dll" />
+    <Content Include="DD\bin\Debug\net48\SerilogTimings.dll" />
+    <Content Include="DD\bin\Debug\net48\Speckle.Newtonsoft.Json.dll" />
+    <Content Include="DD\bin\Debug\net48\SpeckleCore2.dll" />
+    <Content Include="DD\bin\Debug\net48\SQLitePCLRaw.batteries_v2.dll" />
+    <Content Include="DD\bin\Debug\net48\SQLitePCLRaw.core.dll" />
+    <Content Include="DD\bin\Debug\net48\SQLitePCLRaw.provider.dynamic_cdecl.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Buffers.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Collections.Immutable.dll" />
+    <Content Include="DD\bin\Debug\net48\System.IO.Pipelines.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Memory.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Net.WebSockets.Client.Managed.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Numerics.Vectors.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Reactive.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Reflection.Metadata.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Text.Encodings.Web.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Text.Json.dll" />
+    <Content Include="DD\bin\Debug\net48\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="DD\bin\Debug\net48\System.ValueTuple.dll" />
+    <Content Include="DD\DataApi\API.dll" />
+    <Content Include="DD\DataApi\Linkit.dll" />
+    <Content Include="DD\DataApi\使用说明.txt" />
+    <Content Include="DD\Module_Screenshots\screenshot_20230707_151155_000.png" />
+    <Content Include="DD\Module_Screenshots\screenshot_20230707_165253_021.png" />
+    <Content Include="DD\Module_Screenshots\screenshot_20230707_165305_220.png" />
+    <Content Include="DD\Module_Screenshots\screenshot_20230707_174433_110.png" />
+    <Content Include="DD\Module_Screenshots\screenshot_20230707_175932_210.png" />
+    <Content Include="DD\Module_Screenshots\screenshot_20230707_185609_000.png" />
+    <Content Include="DD\obj\Debug\net48\DD.csproj.FileListAbsolute.txt" />
+    <Content Include="DD\obj\Debug\net48\DD.exe" />
+    <Content Include="DD\obj\Debug\net48\DD.pdb" />
+    <Content Include="DD\Resource\applogoexample.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Bed_Side_Table.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Full_Size_Bed.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\King_Size_Bed.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Queen_Size_Bed.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Single_Size_Bed.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\TV_Table_200.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\TV_Table_400.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Wardrobe_1200.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Wardrobe_1500.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Wardrobe_1800.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Wardrobe_2000.png" />
+    <Content Include="DD\Resource\Furniture\Bedroom\Wardrobe_2400.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Double_Type_Storage.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Drawers_Type_Storage.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\L333_Type_Fridge.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\L488_Type_Fridge.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Single_Type_Storage.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Standard_Size_Basket.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Standard_Size_Cooker.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Standard_Size_Dishwasher.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Standard_Size_Electrical.png" />
+    <Content Include="DD\Resource\Furniture\Kitchen\Standard_Size_Washer.png" />
+    <Content Include="DD\Resource\Furniture\Mapping\Restroom_Tiles.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Comfortable_Size_Basin.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Compact_Size_Basin.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Diamond_Shape_Type_Shower.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Fan_Shape_Type_Shower.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Large_Size_Basin.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Rectangle_Type_Shower.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Screen_Type_Shower.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Standard_Size_Basin.png" />
+    <Content Include="DD\Resource\Furniture\Restroom\Standard_Size_Toilet.png" />
+    <Content Include="DD\Resource\Icon\Bin.png" />
+    <Content Include="DD\Resource\Icon\Redo.png" />
+    <Content Include="DD\Resource\Icon\Save.png" />
+    <Content Include="DD\Resource\Icon\Undo.png" />
+    <Content Include="DD\Resource\Icon\Upload.png" />
+    <Content Include="DD\Resource\settings.png" />
+    <Content Include="DD\Resource\建筑.png" />
+    <Content Include="DD\Resource\结构.png" />
+    <Content Include="DD\Resource\规划.png" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="Plan\bin\Debug\net48\BouncyCastle.Crypto.dll" />
+    <Content Include="Plan\bin\Debug\net48\DD.exe" />
+    <Content Include="Plan\bin\Debug\net48\DD.pdb" />
+    <Content Include="Plan\bin\Debug\net48\Google.Protobuf.dll" />
+    <Content Include="Plan\bin\Debug\net48\GraphQL.Client.Abstractions.dll" />
+    <Content Include="Plan\bin\Debug\net48\GraphQL.Client.Abstractions.Websocket.dll" />
+    <Content Include="Plan\bin\Debug\net48\GraphQL.Client.dll" />
+    <Content Include="Plan\bin\Debug\net48\GraphQL.Primitives.dll" />
+    <Content Include="Plan\bin\Debug\net48\K4os.Compression.LZ4.dll" />
+    <Content Include="Plan\bin\Debug\net48\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="Plan\bin\Debug\net48\K4os.Hash.xxHash.dll" />
+    <Content Include="Plan\bin\Debug\net48\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="Plan\bin\Debug\net48\Microsoft.Data.Sqlite.dll" />
+    <Content Include="Plan\bin\Debug\net48\MySql.Data.dll" />
+    <Content Include="Plan\bin\Debug\net48\Newtonsoft.Json.dll" />
+    <Content Include="Plan\bin\Debug\net48\Objects.dll" />
+    <Content Include="Plan\bin\Debug\net48\Plan.pdb" />
+    <Content Include="Plan\bin\Debug\net48\Polly.Contrib.WaitAndRetry.dll" />
+    <Content Include="Plan\bin\Debug\net48\Polly.dll" />
+    <Content Include="Plan\bin\Debug\net48\Polly.Extensions.Http.dll" />
+    <Content Include="Plan\bin\Debug\net48\runtimes\win-arm\native\e_sqlite3.dll" />
+    <Content Include="Plan\bin\Debug\net48\runtimes\win-x64\native\e_sqlite3.dll" />
+    <Content Include="Plan\bin\Debug\net48\runtimes\win-x86\native\e_sqlite3.dll" />
+    <Content Include="Plan\bin\Debug\net48\Sentry.dll" />
+    <Content Include="Plan\bin\Debug\net48\Sentry.Serilog.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Enrichers.ClientInfo.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Enrichers.GlobalLogContext.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Exceptions.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Formatting.Compact.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Sinks.Console.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Sinks.File.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Sinks.PeriodicBatching.dll" />
+    <Content Include="Plan\bin\Debug\net48\Serilog.Sinks.Seq.dll" />
+    <Content Include="Plan\bin\Debug\net48\SerilogTimings.dll" />
+    <Content Include="Plan\bin\Debug\net48\Speckle.Newtonsoft.Json.dll" />
+    <Content Include="Plan\bin\Debug\net48\SpeckleCore2.dll" />
+    <Content Include="Plan\bin\Debug\net48\SQLitePCLRaw.batteries_v2.dll" />
+    <Content Include="Plan\bin\Debug\net48\SQLitePCLRaw.core.dll" />
+    <Content Include="Plan\bin\Debug\net48\SQLitePCLRaw.provider.dynamic_cdecl.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Buffers.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Collections.Immutable.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.IO.Pipelines.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Memory.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Net.WebSockets.Client.Managed.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Numerics.Vectors.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Reactive.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Reflection.Metadata.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Text.Encodings.Web.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Text.Json.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Plan\bin\Debug\net48\System.ValueTuple.dll" />
+    <Content Include="Plan\obj\Debug\net48\Plan.csproj.FileListAbsolute.txt" />
+    <Content Include="Plan\obj\Debug\net48\Plan.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataCenter\DataOutput.cs" />
+    <Compile Include="DataCenter\obj\Debug\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="DataCenter\obj\Debug\net48\DataCenter.AssemblyInfo.cs" />
+    <Compile Include="DataCenter\obj\Debug\net48\DataCenter.GlobalUsings.g.cs" />
+    <Compile Include="DataCenter\obj\Release\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="DataCenter\obj\Release\net48\DataCenter.AssemblyInfo.cs" />
+    <Compile Include="DataCenter\obj\Release\net48\DataCenter.GlobalUsings.g.cs" />
+    <Compile Include="DD\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\AssemblyInfo.cs" />
+    <Compile Include="DD\Data\DATAOUTPUT.cs" />
+    <Compile Include="DD\Data\DataSetup.cs" />
+    <Compile Include="DD\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\Axis.xaml.cs">
+      <DependentUpon>Axis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\Controlbar.xaml.cs">
+      <DependentUpon>Controlbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\Door.xaml.cs">
+      <DependentUpon>Door.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\DoorDTO.cs" />
+    <Compile Include="DD\Model\Furniture.xaml.cs">
+      <DependentUpon>Furniture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\FurnitureEnum.cs" />
+    <Compile Include="DD\Model\LayOutObj.cs" />
+    <Compile Include="DD\Model\Plane.cs" />
+    <Compile Include="DD\Model\Room.xaml.cs">
+      <DependentUpon>Room.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\Wall.xaml.cs">
+      <DependentUpon>Wall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\WallDTO.cs" />
+    <Compile Include="DD\Model\WallMethods.cs" />
+    <Compile Include="DD\Model\Win.xaml.cs">
+      <DependentUpon>Win.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Model\WindowDTO.cs" />
+    <Compile Include="DD\obj\Debug\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="DD\obj\Debug\net48\App.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\App.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_fhgtdwdk_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_fuizvnim_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_g4k4xllq_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_m0wx40t4_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_m1jtvepd_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_ppvqnpzc_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_ssdvn2bk_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_uyx41j3w_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\DD_yv1utmsb_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Debug\net48\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\MainWindow.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\MainWindow.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Axis.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Axis.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Controlbar.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Controlbar.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Door.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Door.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Furniture.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Furniture.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Room.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Room.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Wall.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Wall.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Win.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Model\Win.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Control\Control.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Control\Control.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Control\Info.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Control\Info.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Control\Wall_Control.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Control\Wall_Control.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Converter.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\Converter.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\SetUp\ConfigPage.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\SetUp\ConfigPage.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\SetUp\DesignPage.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\SetUp\DesignPage.g.i.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\SetUp\LayoutPage.g.cs" />
+    <Compile Include="DD\obj\Debug\net48\Views\SetUp\LayoutPage.g.i.cs" />
+    <Compile Include="DD\obj\Release\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="DD\obj\Release\net48\App.g.cs" />
+    <Compile Include="DD\obj\Release\net48\DD.AssemblyInfo.cs" />
+    <Compile Include="DD\obj\Release\net48\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="DD\obj\Release\net48\MainWindow.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Axis.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Controlbar.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Door.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Furniture.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Room.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Wall.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Model\Win.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Sentry.Attributes.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\Control\Control.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\Control\Info.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\Control\Wall_Control.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\Converter.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\SetUp\ConfigPage.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\SetUp\DesignPage.g.cs" />
+    <Compile Include="DD\obj\Release\net48\Views\SetUp\LayoutPage.g.cs" />
+    <Compile Include="DD\Service\Config.cs" />
+    <Compile Include="DD\Service\IO\CAD\SaveCAD.cs" />
+    <Compile Include="DD\Service\IO\Deserialization.cs" />
+    <Compile Include="DD\Service\IO\Serialization.cs" />
+    <Compile Include="DD\Service\Toolkit\Capture.cs" />
+    <Compile Include="DD\Service\Toolkit\DataServices.cs" />
+    <Compile Include="DD\Service\Toolkit\DiffusionData.cs" />
+    <Compile Include="DD\Service\Toolkit\History.cs" />
+    <Compile Include="DD\Service\Toolkit\ImageProcess.cs" />
+    <Compile Include="DD\Service\Toolkit\Request.cs" />
+    <Compile Include="DD\Service\UI\CheckAxis.cs" />
+    <Compile Include="DD\Service\UI\CheckControlLine.cs" />
+    <Compile Include="DD\Service\UI\Furniture\Bedroom.cs" />
+    <Compile Include="DD\Service\UI\Furniture\CheckFurniture.cs" />
+    <Compile Include="DD\Service\UI\Furniture\Kitchen.cs" />
+    <Compile Include="DD\Service\UI\Furniture\Restroom.cs" />
+    <Compile Include="DD\Service\UI\Interaction.cs" />
+    <Compile Include="DD\Service\UI\Megnetic.cs" />
+    <Compile Include="DD\Views\Control\Control.xaml.cs">
+      <DependentUpon>Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\Control\Info.xaml.cs">
+      <DependentUpon>Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\Control\Wall_Control.xaml.cs">
+      <DependentUpon>Wall_Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\Converter.xaml.cs">
+      <DependentUpon>Converter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\SetUp\ConfigPage.xaml.cs">
+      <DependentUpon>ConfigPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\SetUp\DesignPage.xaml.cs">
+      <DependentUpon>DesignPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\SetUp\DesignPageUI.xaml.cs" />
+    <Compile Include="DD\Views\SetUp\LayoutPage.xaml.cs">
+      <DependentUpon>LayoutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DD\Views\SetUp\LayoutPageUI.xaml.cs" />
+    <Compile Include="obj\x86\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="obj\x86\Release\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Plan\obj\Debug\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Plan\obj\Debug\net48\Plan.AssemblyInfo.cs" />
+    <Compile Include="Plan\obj\Debug\net48\Sentry.Attributes.cs" />
+    <Compile Include="Plan\obj\Release\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Plan\obj\Release\net48\Plan.AssemblyInfo.cs" />
+    <Compile Include="Plan\PlanComponent.cs" />
+    <Compile Include="Plan\PlanInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DD\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Axis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Controlbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Door.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Furniture.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Room.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Wall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Model\Win.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Resource\Resource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\Control\Control.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\Control\Info.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\Control\Wall_Control.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\Converter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\SetUp\ConfigPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\SetUp\DesignPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DD\Views\SetUp\LayoutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DD\obj\Debug\net48\DD.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\DD\FileContentIndex\merges\" />
+    <Folder Include=".vs\Layout-CHY_MVVM\FileContentIndex\merges\" />
+    <Folder Include=".vs\Layout\v17\" />
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="DataCenter\bin\Release\net48\" />
+    <Folder Include="DD\.vs\DD\FileContentIndex\merges\" />
+    <Folder Include="DD\bin\Release\net48\" />
+    <Folder Include="Plan\bin\Release\net48\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="DD.Views.DesignPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DD"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="DesignPage"
+    d:DesignHeight="580"
+    d:DesignWidth="140"
+    Background="White"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/DD;component/Resource/Resource.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid>
+        <Canvas
+            x:Name="canvas1"
+            AllowDrop="False"
+            Background="#7FE6E6E6">
+
+            <Label
+                Canvas.Left="35"
+                Canvas.Top="10"
+                Width="70"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Content="房间组件"
+                FontSize="14"
+                FontWeight="Bold"
+                Foreground="#FF505050" />
+
+            <Separator
+                Canvas.Left="13"
+                Canvas.Top="38"
+                Width="115"
+                Height="5"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+
+            <ListView
+                x:Name="lv"
+                Canvas.Top="50"
+                Width="140"
+                Height="480"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                BorderBrush="{x:Null}"
+                Foreground="#FF505050"
+                ItemsSource="{Binding}"
+                SelectionMode="Single">
+
+                <ListView.Resources>
+
+                    <Style BasedOn="{StaticResource ScrollStyle_Mobile}" TargetType="ScrollBar" />
+
+                </ListView.Resources>
+
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                    <Border Background="Transparent">
+                                        <ContentPresenter />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0,0,0,7.5">
+                            <StackPanel Margin="0,5,0,0" Orientation="Vertical">
+                                <local:RoomTest
+                                    Width="{Binding Width}"
+                                    Height="{Binding Height}"
+                                    HorizontalAlignment="Center"
+                                    Fill="Transparent"
+                                    Foreground="{Binding Stroke, RelativeSource={RelativeSource Self}}"
+                                    PreviewMouseDown="Rect_PreviewMouseDown"
+                                    PreviewMouseMove="Rect_PreviewMouseMove"
+                                    PreviewMouseUp="Rect_PreviewMouseUp"
+                                    Stroke="{Binding Color}"
+                                    StrokeThickness="4"
+                                    Text="{Binding Name}"
+                                    isDynamic="False" />
+                                <Label
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    Content="{Binding Name}"
+                                    Foreground="#FF505050" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Canvas>
+    </Grid>
+</Page>

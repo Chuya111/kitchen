@@ -1,0 +1,4 @@
+引用dll
+Nuget安装 Speckle.Core 和 Speckle.Objects 
+
+调用 ArchiApi.Receive 和 ArchiApi.Send 

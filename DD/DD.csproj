@@ -1,0 +1,180 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <Nullable>disable</Nullable>
+	<LangVersion>9.0</LangVersion>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataApi\**" />
+    <Compile Remove="Module_Screenshots\**" />
+    <Compile Remove="Service\IO\CAD\**" />
+    <EmbeddedResource Remove="DataApi\**" />
+    <EmbeddedResource Remove="Module_Screenshots\**" />
+    <EmbeddedResource Remove="Service\IO\CAD\**" />
+    <None Remove="DataApi\**" />
+    <None Remove="Module_Screenshots\**" />
+    <None Remove="Service\IO\CAD\**" />
+    <Page Remove="DataApi\**" />
+    <Page Remove="Module_Screenshots\**" />
+    <Page Remove="Service\IO\CAD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\Plane.cs" />
+    <Compile Remove="Views\SetUp\DesignPage - Copy.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\applogoexample.png" />
+    <None Remove="Resource\Bed_Side_Table.png" />
+    <None Remove="Resource\Furniture\Bedroom\Bed_Side_Table.png" />
+    <None Remove="Resource\Furniture\Bedroom\Fullsize_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\Full_Size_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\Kingsize_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\King_Size_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\Queensize_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\Queen_Size_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\Single_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\Single_Size_Bed.png" />
+    <None Remove="Resource\Furniture\Bedroom\TV_Table_200.png" />
+    <None Remove="Resource\Furniture\Bedroom\TV_Table_400.png" />
+    <None Remove="Resource\Furniture\Bedroom\Wardrobe_1200.png" />
+    <None Remove="Resource\Furniture\Bedroom\Wardrobe_1500.png" />
+    <None Remove="Resource\Furniture\Bedroom\Wardrobe_1800.png" />
+    <None Remove="Resource\Furniture\Bedroom\Wardrobe_2000.png" />
+    <None Remove="Resource\Furniture\Bedroom\Wardrobe_2400.png" />
+    <None Remove="Resource\Furniture\Kitchen\Double_Type_Storage.png" />
+    <None Remove="Resource\Furniture\Kitchen\Drawers_Type_Storage.png" />
+    <None Remove="Resource\Furniture\Kitchen\L333_Type_Fridge.png" />
+    <None Remove="Resource\Furniture\Kitchen\L488_Type_Fridge.png" />
+    <None Remove="Resource\Furniture\Kitchen\Single_Type_Storage.png" />
+    <None Remove="Resource\Furniture\Kitchen\Standard_Size_Basket.png" />
+    <None Remove="Resource\Furniture\Kitchen\Standard_Size_Cooker.png" />
+    <None Remove="Resource\Furniture\Kitchen\Standard_Size_Dishwasher.png" />
+    <None Remove="Resource\Furniture\Kitchen\Standard_Size_Electrical.png" />
+    <None Remove="Resource\Furniture\Kitchen\Standard_Size_Washer.png" />
+    <None Remove="Resource\Furniture\Mapping\Restroom_Tiles.png" />
+    <None Remove="Resource\Furniture\Restroom\Comfortable_Size_Basin.png" />
+    <None Remove="Resource\Furniture\Restroom\Compact_Size_Basin.png" />
+    <None Remove="Resource\Furniture\Restroom\Diamond_Shape_Type_Shower.png" />
+    <None Remove="Resource\Furniture\Restroom\Fan_Shape_Type_Shower.png" />
+    <None Remove="Resource\Furniture\Restroom\Large_Size_Basin.png" />
+    <None Remove="Resource\Furniture\Restroom\Rectangle_Type_Shower.png" />
+    <None Remove="Resource\Furniture\Restroom\Screen_Type_Shower.png" />
+    <None Remove="Resource\Furniture\Restroom\Standard_Size_Basin.png" />
+    <None Remove="Resource\Furniture\Restroom\Standard_Size_Toilet.png" />
+    <None Remove="Resource\Icon\bin.png" />
+    <None Remove="Resource\Icon\Redo.png" />
+    <None Remove="Resource\Icon\Save.png" />
+    <None Remove="Resource\Icon\undo.png" />
+    <None Remove="Resource\Icon\Upload.png" />
+    <None Remove="Resource\settings.png" />
+    <None Remove="Resource\建筑.png" />
+    <None Remove="Resource\结构.png" />
+    <None Remove="Resource\规划.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Resource\Resource.xaml" />
+    <Page Remove="Views\SetUp\DesignPage - Copy.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Furniture\Kitchen\Drawers_Type_Storage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grasshopper" Version="7.13.21348.13001" />
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RhinoCommon" Version="7.13.21348.13001" />
+    <PackageReference Include="Speckle.Core" Version="2.15.2" />
+    <PackageReference Include="Speckle.Objects" Version="2.15.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="netDxf">
+      <HintPath>..\..\..\..\..\Coding\CAD\netDxf-master\netDxf\bin\Debug\net48\netDxf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PublicAssemblies\System.Text.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\applogoexample.png" />
+    <Resource Include="Resource\Furniture\Bedroom\Bed_Side_Table.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\Full_Size_Bed.png" />
+    <Resource Include="Resource\Furniture\Bedroom\King_Size_Bed.png" />
+    <Resource Include="Resource\Furniture\Bedroom\Queen_Size_Bed.png" />
+    <Resource Include="Resource\Furniture\Bedroom\Single_Size_Bed.png" />
+    <Resource Include="Resource\Furniture\Bedroom\TV_Table_200.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\TV_Table_400.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\Wardrobe_1200.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\Wardrobe_1500.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\Wardrobe_1800.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\Wardrobe_2000.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Bedroom\Wardrobe_2400.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Furniture\Kitchen\Double_Type_Storage.png" />
+    <Resource Include="Resource\Furniture\Kitchen\L333_Type_Fridge.png" />
+    <Resource Include="Resource\Furniture\Kitchen\L488_Type_Fridge.png" />
+    <Resource Include="Resource\Furniture\Kitchen\Single_Type_Storage.png" />
+    <Resource Include="Resource\Furniture\Kitchen\Standard_Size_Basket.png" />
+    <Resource Include="Resource\Furniture\Kitchen\Standard_Size_Cooker.png" />
+    <Resource Include="Resource\Furniture\Kitchen\Standard_Size_Dishwasher.png" />
+    <Resource Include="Resource\Furniture\Kitchen\Standard_Size_Electrical.png" />
+    <Resource Include="Resource\Furniture\Kitchen\Standard_Size_Washer.png" />
+    <Resource Include="Resource\Furniture\Mapping\Restroom_Tiles.png" />
+    <Resource Include="Resource\Furniture\Restroom\Comfortable_Size_Basin.png" />
+    <Resource Include="Resource\Furniture\Restroom\Compact_Size_Basin.png" />
+    <Resource Include="Resource\Furniture\Restroom\Diamond_Shape_Type_Shower.png" />
+    <Resource Include="Resource\Furniture\Restroom\Fan_Shape_Type_Shower.png" />
+    <Resource Include="Resource\Furniture\Restroom\Large_Size_Basin.png" />
+    <Resource Include="Resource\Furniture\Restroom\Rectangle_Type_Shower.png" />
+    <Resource Include="Resource\Furniture\Restroom\Screen_Type_Shower.png" />
+    <Resource Include="Resource\Furniture\Restroom\Standard_Size_Basin.png" />
+    <Resource Include="Resource\Furniture\Restroom\Standard_Size_Toilet.png" />
+    <Resource Include="Resource\Icon\bin.png" />
+    <Resource Include="Resource\Icon\Redo.png" />
+    <Resource Include="Resource\Icon\Save.png" />
+    <Resource Include="Resource\Icon\undo.png" />
+    <Resource Include="Resource\Icon\Upload.png" />
+    <Resource Include="Resource\Resource.xaml" />
+    <Resource Include="Resource\settings.png" />
+    <Resource Include="Resource\建筑.png" />
+    <Resource Include="Resource\结构.png" />
+    <Resource Include="Resource\规划.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Model\WallMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SetUp\DesignPageUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
